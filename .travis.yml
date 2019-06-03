@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 7.1
+
+before_install:
+  - cd symfony
+
+install:
+  - composer install
+
+branches:
+  only:
+  - master
+  - dev
