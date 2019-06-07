@@ -17,7 +17,7 @@ services:
         ports:
             - "9000:9001"
         volumes:
-            - ../xivapi:/var/www/xivapi:cached
+            - ../xivapi.com-v3:/var/www/xivapi:cached
             - ./docker/logs/symfony:/var/www/xivapi/var/log:cached
         links:
             - db
@@ -31,7 +31,7 @@ services:
         links:
             - php
         volumes:
-            - ../xivapi:/var/www/xivapi:cached
+            - ../xivapi.com-v3:/var/www/xivapi:cached
             - ./docker/logs/nginx:/var/log/nginx:cached
     mysql:
         image: mysql
